@@ -57,8 +57,9 @@ function draw() {
 Create a new sketch with the code and check it matched your prediction.
 
 **What's wrong with this code?**
+it is too repetative!
 
-**How could we improve it?**
+**How could we improve it?**the code could be placed inside a loop and the loop ran five times would give the same output.
 
 There's a lot of repetition in the code here. Generally, as programmers, we try
 to avoid repetition - often the more code we have, the more space there is for
