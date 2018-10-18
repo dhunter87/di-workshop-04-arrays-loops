@@ -84,6 +84,8 @@ function draw() {
 ```
 
 **How does changing `count` effect your sketch?**
+count is the variable used to iterate through the loop. when the variable 'i' is equal to the variable 'count', the loop wil stop executing.
+
 
 Let's talk through this line by line:
 
@@ -149,7 +151,9 @@ x = x + 20
 ```
 
 **Write a description for these two lines in here**
+the rect() function takes 4 perameters (x, y, width, height), x and y being co-ordinates for the upper left side of the rectangle. var x has been initialised outside the rect() function and given the value of 10. y, width and heaight have all been initialised inside the rect() function and given the value of 10.
 
+each time the loop iterates, the value of x ix increased by 20, causing the following rectangles to be drawn in different co-odinates. i.e. in thes case, each new rectangle is placed twenty pixles to the right of the previous one.
 ---
 
 ```js
