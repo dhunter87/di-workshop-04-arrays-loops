@@ -167,9 +167,15 @@ up until it reaches `count`, and then the loop stops.
 ---
 
 **Draw a flowchart and write pseudocode for `draw`**
+set up - 
+create canvas with height of 400 and width of 400 -
+while 'i' is less than 'count' - 
+draw rectangle at co-ordinates 10, 10 with a width and heaght of 10 - 
+each iteration increase the value of x by 20 and i by 1 and recheck the condition of the loop!
+
 
 **Trace through the execution of this code (including every time x and i change)
-on paper**
+on paper** - DONE 
 
 ---
 
@@ -208,13 +214,14 @@ to 5) gets moved to the `for` line. This makes things a lot easier to follow.
 **Go through the for loop and match each section to the while loop - all the
 same bits are there, they've just moved around**.
 
-**Replace the `while` loop in your sketch with a `for` loop**
+**Replace the `while` loop in your sketch with a `for` loop** - DONE
 
 **Change your code to create a grid of squares instead of a single line. Note:
 you can put a loop in another loop!**
+- DONE
 
 **Refactor your code into functions. Try not to have any function longer than
-about 5 lines**
+about 5 lines** - DONE
 
 **What's the most interesting looking sketch you can create with a `for` loop?**
 
@@ -244,6 +251,7 @@ function draw() {
     speedOne = speedOne * -1
   }
   rect(30, yOne, 20, 20)
+  
 
   yTwo = yTwo + speedTwo
   if (yTwo < 0 || yTwo > height) {
