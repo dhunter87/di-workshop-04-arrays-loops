@@ -270,7 +270,7 @@ function draw() {
 **Create a new sketch with the code and run it. Was your prediction correct?**
 
 As in the previous example, we've got a lot of repetition here. **How would you
-refactor the code to avoid the repetition?**
+refactor the code to avoid the repetition?** by making a bounce function which is used by each block when it reaches the perameters of the canvas
 
 It looks like we might be able to use a loop as we're doing basically the same
 thing a bunch of times. There's a problem though - although the repeated code
@@ -299,29 +299,29 @@ happens.
 
 | Line                      | Expected Result | Actual Result | Were you right? Why? |
 | ------------------------- | --------------- | ------------- | -------------------- |
-| `[]`                      |                 |               |                      |
-| `[1, 2, 3]`               |                 |               |                      |
-| `['a', 'b', 'c']`         |                 |               |                      |
-| `['a', 2, false]`         |                 |               |                      |
-| `[].length`               |                 |               |                      |
-| `[5, 6, 7].length`        |                 |               |                      |
-| `var myArray = [5, 6, 7]` |                 |               |                      |
-| `myArray`                 |                 |               |                      |
-| `myArray.length`          |                 |               |                      |
-| `myArray[1]`              |                 |               |                      |
-| `myArray[0]`              |                 |               |                      |
-| `myArray[2]`              |                 |               |                      |
-| `myArray[3]`              |                 |               |                      |
-| `myArray[1] = 'hi'`       |                 |               |                      |
-| `myArray[1]`              |                 |               |                      |
-| `myArray`                 |                 |               |                      |
-| `myArray.push(14)`        |                 |               |                      |
-| `myArray`                 |                 |               |                      |
-| `myArray.length`          |                 |               |                      |
-| `var index = 1`           |                 |               |                      |
-| `myArray[index]`          |                 |               |                      |
-| `index = 2`               |                 |               |                      |
-| `myArray[index]`          |                 |               |                      |
+| `[]`                      |     array       |      []       |array with 0 elements |
+| `[1, 2, 3]`               |array- 3 elements|array- 3 elements| yes                |
+| `['a', 'b', 'c']`         |array- 3 elements|array- 3 elements| yes                |
+| `['a', 2, false]`         |array- 3 elements|array- 3 elements| yes                |
+| `[].length`               |will show how many elements in the array (0)|correct| yes|
+| `[5, 6, 7].length`        |same as above (3)|   correct     | yes                  |
+| `var myArray = [5, 6, 7]` |initialises array|  correct      | yes                  |
+| `myArray`                 |shows above array|       correct |           yes        |
+| `myArray.length`          |shows length of myarray| correct |          yes         |
+| `myArray[1]`              |shows 2nd element|  correct      |            yes       |
+| `myArray[0]`              |shows 1st element|  correct      |         yes          |
+| `myArray[2]`              |shows 3rd element|correct        | yes                  |
+| `myArray[3]`              |index out of range error|undefined| yes but different message|
+| `myArray[1] = 'hi'`       |sets ste second element to 'hi'|"hi"| yes               |
+| `myArray[1]`              |           "hi"  | "hi"          | yes                  |
+| `myArray`                 |       5, "hi", 7| 5, "hi", 7    | yes                  |
+| `myArray.push(14)`        |adds another element to the array|      4        |       yes            |
+| `myArray`                 | 5, "hi", 7, 14  |5, "hi", 7, 14 |  yes                 |
+| `myArray.length`          |         4       | 4             | yes                  |
+| `var index = 1`           |creates new variable| index = 1  |  yes                 |
+| `myArray[index]`          |         "hi"    | "hi"          | yes                  |
+| `index = 2`               |  index = 2      |       2       | yes                  |
+| `myArray[index]`          |        7        |        7      | yes                  |
 
 Hopefully you'll be able to see that:
 

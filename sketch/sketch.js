@@ -1,29 +1,29 @@
-function setup(){
-  createCanvas(400, 400)
-}
-function outerLoop()
-{
-  var x = 10
-  var count = 5
-  for (var i = 0; i < count; i = i + 1) {
-    innerLoop(x)
-    x = x + 20 
-  }
-}
-function innerLoop(x)
-  {
-    var count = 5
-    var y = 10
-    for (var j = 0; j < count; j = j + 1){      
-    rect(x, y, 10, 10)   
-    y = y + 20
-  }
-}
+// function setup(){
+//   createCanvas(400, 400)
+// }
+// function outerLoop()
+// {
+//   var x = 10
+//   var count = 5
+//   for (var i = 0; i < count; i = i + 1) {
+//     innerLoop(x)
+//     x = x + 20 
+//   }
+// }
+// function innerLoop(x)
+//   {
+//     var count = 5
+//     var y = 10
+//     for (var j = 0; j < count; j = j + 1){      
+//     rect(x, y, 10, 10)   
+//     y = y + 20
+//   }
+// }
 
-function draw()
-{
-  outerLoop()
-}
+// function draw()
+// {
+//   outerLoop()
+// }
 
 
 var yOne = 20
@@ -47,7 +47,7 @@ function draw() {
     
   }
   rect(30, yOne, 20, 20)
-  console.log(yOne)
+  // console.log(yOne)
 
   yTwo = yTwo + speedTwo
   if (yTwo < 0 || yTwo > height) {
