@@ -392,9 +392,9 @@ Tasks:
 
 - [ ] **Add a variable `count` that controls the number of boxes on screen.**
   - Hint: use an empty array `[]`, another `for` loop, and `.push()` to create
-    the starting arrays
-- [ ] **Have the boxes move left and right as well as up and down**
-- [ ] **Give each box a random start speed**
+    the starting arrays - DONE
+- [ ] **Have the boxes move left and right as well as up and down**  - DONE
+- [ ] **Give each box a random start speed** - DONE
 - [ ] **Create a new moving box at the position of the mouse when the user
       clicks the sketch**
 - [ ] **Add gravity! Each frame, add a small amount to the boxes y speed to
