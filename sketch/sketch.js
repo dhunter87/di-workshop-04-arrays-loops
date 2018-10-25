@@ -1,20 +1,41 @@
-var ys = [20, 100, 180]
-var speeds = [3, 3, 3]
+var ys = []
+var xs = []
+var speeds = []
+var count = 5
+var height = 400
+var width = 400
 
 function setup() {
-  createCanvas(400, 400)
+  createCanvas(height, width)
   background(200)
 }
+function createBoxes(){
+  
+  for( var i = ys.length; i < count; i = i + 1){
+    // ys.push(Math.floor(Math.random()))
+    ys.push(Math.floor(Math.random() * 100))
+    xs.push(Math.floor(Math.random() * 100))
+    speeds.push(Math.floor(Math.random()* 10))
+
+  }
+}
+
+createBoxes()
 
 function draw() {
+  // debugger
   background(200)
 
-  for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < count; i++) {
     ys[i] = ys[i] + speeds[i]
+    xs[i] = xs[i] + speeds[i]
     if (ys[i] < 0 || ys[i] > height) {
       speeds[i] = speeds[i] * -1
     }
-    rect(30 * (i + 1), ys[i], 20, 20)
+    else if (xs[i] < 0 || xs[i] > width) {
+      speeds[i] = speeds[i] * -1
+    }
+    rect(xs * (i + 1), ys[i], 20, 20)
   }
 
 }
